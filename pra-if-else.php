@@ -94,6 +94,23 @@ $temperature = 15;
 實現建議
 */
 
+
+$temperature =15;
+
+if($temperature >=30){
+    echo "今天溫度炎熱，請穿著清涼!";
+}elseif($temperature >=20 && $temperature <=29){
+    echo "今天溫度適宜，請輕便著裝!";
+}elseif($temperature >=10 && $temperature <=19){
+    echo "今天溫度微寒，請穿長袖及注意保暖!";
+}elseif($temperature >=0 && $temperature <=9){
+    echo "恐有寒流來襲，請注意保暖及穿厚外套!";
+}else{
+    echo "此為酷寒，請注意保暖及生命安全!";
+}
+
+
+
 /*
 題目 5：年齡分類
 寫一個 PHP 程式，根據用戶輸入的年齡，將用戶分類為「小孩」、「青少年」、「成人」或「老人」：
