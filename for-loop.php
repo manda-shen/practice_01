@@ -14,6 +14,10 @@
 編寫一個 PHP 程式，使用 for 迴圈打印從 1 到 20 的所有整數。
 */
 
+for($i =1; $i<=20; $i++){
+    echo "$i <br>";
+}
+
 echo "<br>";
 echo "<hr>";
 echo"<br>";
@@ -23,6 +27,37 @@ echo"<br>";
 編寫一個 PHP 程式，使用 for 迴圈打印從 1 到 50 的所有偶數。
 */
 
+for($i=2; $i<=50; $i+=2){
+    echo "$i 、";
+}
+
+echo "<br>";
+echo "<hr>";
+echo"<br>";
+
+for($i=1; $i<=25; $i++){
+    echo ($i*2)."、";
+}
+
+echo "<br>";
+echo "<hr>";
+echo"<br>";
+
+for($i=1; $i<=(50/2); $i++){
+    echo ($i*2)."、";
+}
+
+echo "<br>";
+echo "<hr>";
+echo"<br>";
+
+
+for($i=1; $i<=50; $i++){
+    if($i %2 ==0){
+        echo $i."、";
+    }
+}
+
 echo "<br>";
 echo "<hr>";
 echo"<br>";
@@ -31,6 +66,8 @@ echo"<br>";
 題目 3: 打印乘法表
 編寫一個 PHP 函式，使用 for 迴圈打印 1 到 10 的乘法表。
 */
+
+
 
 echo "<br>";
 echo "<hr>";
