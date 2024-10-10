@@ -49,6 +49,7 @@ switch($level){
         break;
     case 'E':
         echo "你的成績為{$score}分，你得了E，快快站起來!";
+        break;
 }
 
 
