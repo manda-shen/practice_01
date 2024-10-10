@@ -110,6 +110,9 @@ if($temperature >=30){
 }
 
 
+echo "<br>";
+echo "<hr>";
+
 
 /*
 題目 5：年齡分類
@@ -123,7 +126,20 @@ $age = 45;
 實現分類
 */
 
+$age = 45; 
 
+if($age >=0 && $age <=12){
+    echo "你是個小孩".'^o^';
+}elseif($age >=13 && $age <=19){
+    echo "青少年";
+}elseif($age >=20 && $age <=64){
+    echo "成人";
+}elseif($age >=65){
+    echo "老年人";
+}else{
+    echo "你是妖怪嗎?";
+    exit;
+}
 
 
 
