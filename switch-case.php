@@ -17,8 +17,40 @@
 - 80-89 分：B
 - 70-79 分：C
 - 60-69 分：D
-- 60 分以下：F
+- 60 分以下：E
 */
+
+$score =80;
+
+if($score >=90){
+    $level ='A';
+}elseif($score >=80){
+    $level ='B';
+}elseif($score >=70){
+    $level ='C';
+}elseif($score >=60){
+    $level ='D';
+}else{
+    $level ='E';
+}
+
+switch($level){
+    case 'A':
+        echo "你的成績為{$score}分，恭喜你得了A!真是優秀!";
+        break;
+    case 'B':
+        echo "你的成績為{$score}分，恭喜你得了B!不錯的成績，可以再進步!";
+        break;
+    case 'C':
+        echo "你的成績為{$score}分，你得了C，需要再努力努力!";
+        break;
+    case 'D':
+        echo "你的成績為{$score}分，你得了D，有點危險!請加倍努力!";
+        break;
+    case 'E':
+        echo "你的成績為{$score}分，你得了E，快快站起來!";
+}
+
 
 echo"<br>";
 echo"<hr>";
