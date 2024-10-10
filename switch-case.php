@@ -68,6 +68,34 @@ echo"<br>";
 - 7：星期日
 */
 
+$day=3;
+
+switch($day){
+    case '1':
+        echo "今天星期一";
+        break;
+    case '2':
+        echo "今天星期二";
+        break;
+    case '3':
+        echo "今天星期三";
+        break;
+    case '4':
+        echo "今天星期四";
+        break;
+    case '5':
+        echo "今天星期五";
+        break;
+    case '6':
+        echo "今天星期六";
+        break;
+    case '7':
+        echo "今天星期日";
+        break;
+    default:
+        echo "這是哪一天?我不知道!";
+}
+
 echo"<br>";
 echo"<hr>";
 echo"<br>";
@@ -80,6 +108,8 @@ echo"<br>";
 - '*'：乘法
 - '/'：除法
 */
+
+
 
 echo"<br>";
 echo"<hr>";
@@ -94,6 +124,30 @@ echo"<br>";
 - train：火車
 - 其他：未知交通工具
 */
+
+$i=3;
+$a=['car','bus','bicycle','train','else'];
+
+switch($a=$i){
+    case '1':
+        echo "請自行開車";
+        break;
+    case '2':
+        echo "請搭乘公車";
+        break;
+    case '3':
+        echo "請騎乘自行車";
+        break;
+    case '4':
+        echo "請搭乘火車";
+        break;
+    case '5':
+        echo "無法判斷交通工具";
+        break;
+    default:
+        echo "無效選擇，請輸入1-5間的數字";
+}
+
 
 echo"<br>";
 echo"<hr>";
