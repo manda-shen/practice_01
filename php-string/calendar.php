@@ -6,6 +6,7 @@
     <title>Document</title>
     <style>
         table{
+            
             border: 1px solid black;
         }
         tr, td{
