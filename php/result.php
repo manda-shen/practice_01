@@ -39,7 +39,7 @@ $bmi=round($weight/($h*$h),2);
 ?>
 
 <div>你的BMI值為: <?=$bmi;?></div>
-<a href="bmi.php">回上頁</a>
+<a href="bmi.php?bmi=<?$bmi;?>">回首頁/重新測量</a>
 
 </body>
 </html>

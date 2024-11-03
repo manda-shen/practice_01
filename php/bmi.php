@@ -8,7 +8,9 @@
 <body>
     
 <?php
-
+if(isset($_GET['bmi'])){
+    echo "你上次測量的BMI值為為{$_GET['bmi']}";
+}
 ?>
 
 <div>BMI計算-GET</div>
