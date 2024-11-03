@@ -11,7 +11,7 @@
 
 ?>
 
-<div>BMI計算</div>
+<div>BMI計算-GET</div>
 <form action="result.php" method="get">
 <div>
     <label for="height">身高:</label>
@@ -27,6 +27,24 @@
 </div>
 
 </form>
+
+<div>BMI計算-POST</div>
+<form action="result.php" method="post">
+<div>
+    <label for="height">身高:</label>
+    <input type="number" name="height" id="height" step="0.1">
+</div>
+<div>
+    <label for="weight">體重:</label>
+    <input type="number" name="weight" id="weight" step="0.1">
+</div>
+<div>
+    <input type="submit" value="計算">
+    <input type="reset" value="清除/重置">
+</div>
+
+</form>
+
 
 </body>
 </html>
