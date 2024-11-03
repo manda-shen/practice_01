@@ -6,10 +6,12 @@
     <title>Document</title>
     <style>
         table{
-            
+            border-collapse: collapse;
             border: 1px solid black;
+            margin: auto;
         }
-        tr, td{
+        td{
+            padding: 5px 15px;
             border: 1px solid black;
         }
     </style>
@@ -34,8 +36,10 @@
 
 $firstday=date("Y-m-01");
 $firstday_stamp=strtotime($firstday);
-$w_firstday=date("w",$firstday_stamp);
-$day_stamp=strtotime("-$w_firstday day",$firstday_stamp);
+$N_firstday=date("N",$firstday_stamp);
+
+$day_stamp=strtotime("-$N_firstday day",$firstday_stamp);
+
 
 for($i=0; $i<6; $i++){
     echo "<tr>";
