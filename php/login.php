@@ -19,6 +19,7 @@
             width: 40vh;
             border-radius: 10px;
         }
+        
     </style>
 </head>
 <body>
@@ -27,11 +28,11 @@
             <form action="check_acc.php" method="post">
                 <p>
                     <label for="name">帳號:</label>
-                    <input type="text" name="acc" placeholder="使用者名稱" require>
+                    <input type="text" name="acc" placeholder="使用者名稱" required>
                 </p>
                 <p>
                     <label for="password">密碼:</label>
-                    <input type="password" name="password" placeholder="密碼" require>
+                    <input type="password" name="password" placeholder="密碼" required>
                 </p>
                 <p>
                     <input type="submit" value="登入">
