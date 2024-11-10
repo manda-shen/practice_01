@@ -20,17 +20,22 @@ $row=$pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <table>
-<?php
-foreach($row as $row){
-?>
     <tr>
         <td>序號</td>
         <td>班級</td>
         <td>導師</td>
     </tr>
+<?php
+foreach($row as $row){
+?>
+
     <tr>
         <td><?=$row['id'];?></td>
-        <td><?=$row['name'];?></td>
+        <td>
+            <a href="./class_detail.php">
+            <?=$row['name'];?>
+            </a>
+        </td>
         <td><?=$row['tutor'];?></td>
     </tr>
 
